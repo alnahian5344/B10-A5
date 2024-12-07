@@ -7,29 +7,43 @@
     <title>DOM-Quest-Build-and-Manipulate</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .sticky-section {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background-color: #F9F7F3;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 1rem; 
+            width: 100%; 
+        }
+    </style>
 </head>
 
 <body>
-    <!-- NAV SECTION -->
-    <section class="bg-[#F9F7F3]">
-        <Nav class="container mx-auto flex justify-between">
-            <div>
-                <button class="btn bg-[#B4F461]">Donation</button>
-            </div>
-            <div class="flex justify-center items-center gap-2">
-                <img src="./assets/logo.png" alt="">
-                <h3 class="text-3xl font-bold">Donate Bangladesh</h3>
-            </div>
-            <div class="flex justify-center gap-2">
-                <img src="./assets/coin.png" alt="">
-                <div id="nav-state-value" class="stat-value">10000</div>
-            </div>
-        </Nav>
-    </section>
-    <!-- BUTTON SECTION -->
-    <section class="flex justify-center my-10 gap-4">
-        <button id="btn-donation-rmv-class" class="btn bg-[#B4F461]">Donation</button>
-        <button id="btn-history-rmv-class" class="btn">History</button>
+    <section class="sticky-section">
+        <!-- NAV SECTION -->
+        <section class="bg-[#F9F7F3] ">
+            <Nav class="container mx-auto flex justify-between ">
+                <div>
+                    <button id="btn-blog-home" class="btn bg-[#B4F461]">Blog</button>
+                </div>
+                <div class="flex justify-center items-center gap-2">
+                    <img src="./assets/logo.png" alt="">
+                    <h3 class="text-3xl font-bold">Donate Bangladesh</h3>
+                </div>
+                <div class="flex justify-center gap-2">
+                    <img src="./assets/coin.png" alt="">
+                    <div id="nav-state-value" class="stat-value">10000</div>
+                </div>
+            </Nav>
+        </section>
+        <!-- BUTTON SECTION -->
+        <section class="flex justify-center my-10 gap-4 ">
+            <button id="btn-donation-rmv-class" class="btn bg-[#B4F461]">Donation</button>
+            <button id="btn-history-rmv-class" class="btn">History</button>
+        </section>
     </section>
     <!-- CARD SECTION -->
     <section id="card-section" class="container mx-auto">
@@ -67,7 +81,7 @@
     </section>
     <!-- HISTORY SECTION -->
     <section id="history-section" class="hidden container mx-auto">
-        <div> 
+        <div>
             <h1>History Section</h1>
         </div>
     </section>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="container mx-auto">
+    <section class="sticky-section">
+        <!-- NAV SECTION -->
+        <section class="bg-[#F9F7F3] ">
+            <Nav class="container mx-auto flex justify-between ">
+                <div>
+                    <button id="btn-blog-blog" class="btn bg-[#B4F461]">Home</button>
+                </div>
+                <div class="flex justify-center items-center gap-2">
+                    <img src="./assets/logo.png" alt="">
+                    <h3 class="text-3xl font-bold">Donate Bangladesh</h3>
+                </div>
+                <div class="flex justify-center gap-2">
+                    <img src="./assets/coin.png" alt="">
+                    <div id="nav-state-value" class="stat-value">10000</div>
+                </div>
+            </Nav>
+        </section>
+        <!-- BUTTON SECTION -->
+        <section class="flex justify-center my-10 gap-4 ">
+            <button id="btn-donation-rmv-class" class="btn bg-[#B4F461]">Donation</button>
+            <button id="btn-history-rmv-class" class="btn">History</button>
+        </section>
+    </section>
+    <section>           
+        <h1 class="text-3xl text-black font-bold my-5">Important FAQ</h1>
+        <div class="join join-vertical w-full">
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+                <input type="radio" name="my-accordion-4" checked="checked" />
+                <div class="collapse-title text-xl font-medium">What is Document Object Model(DOM)?</div>
+                <div class="collapse-content">
+                    <p>The Document Object Model (DOM) is a programming interface that represents the structure of a
+                        document in memory</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+                <input type="radio" name="my-accordion-4" />
+                <div class="collapse-title text-xl font-medium">How do you select an element form dom?</div>
+                <div class="collapse-content">
+                    <p>
+                        The easiest way to access a single element in the DOM is by its unique ID. You can get an
+                        element by
+                        ID with the getElementById() method of the document object. In the Console, get the element and
+                        assign it to the demoId variable.</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+                <input type="radio" name="my-accordion-4" />
+                <div class="collapse-title text-xl font-medium">What is the difference between querySelector and
+                    querySelectorAll?</div>
+                <div class="collapse-content">
+                    <p>querySelector is used to select a single element from the DOM tree, while document.
+                        querySelectorAll
+                        is used to select multiple elements from the DOM tree.</p>
+                </div>
+            </div>
+        </div>
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" checked="checked" />
+            <div class="collapse-title text-xl font-medium">How to select an element in CSS?</div>
+            <div class="collapse-content">
+                <p>The id selector uses the id attribute of an HTML element to select a specific element. The id of an
+                    element is unique within a page, so the id selector is used to select one unique element! To select
+                    an
+                    element with a specific id, write a hash (#) character, followed by the id of the element.</p>
+            </div>
+        </div>
+    </section>
+    </div>
+    <script src="/JS/common.js"></script>
+</body>
+
+</html>
