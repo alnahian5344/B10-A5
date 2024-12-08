@@ -15,8 +15,8 @@
             z-index: 100;
             background-color: #F9F7F3;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            padding: 1rem; 
-            width: 100%; 
+            padding: 1rem;
+            width: 100%;
         }
     </style>
 </head>
@@ -29,13 +29,18 @@
                 <div>
                     <button id="btn-blog-home" class="btn bg-[#B4F461]">Blog</button>
                 </div>
+                <div class="hidden">
+                    <button id="btn-blog-blog" class="btn bg-[#B4F461]">Home</button>
+                </div>
                 <div class="flex justify-center items-center gap-2">
                     <img src="./assets/logo.png" alt="">
-                    <h3 class="text-3xl font-bold">Donate Bangladesh</h3>
+                    <h3 class="text-4xl font-bold">Donate Bangladesh</h3>
                 </div>
-                <div class="flex justify-center gap-2">
+                <div class="flex justify-center items-center gap-2">
                     <img src="./assets/coin.png" alt="">
                     <div id="nav-state-value" class="stat-value">10000</div>
+                    <div class="font-bold text-black text-2xl">BDT</div>
+
                 </div>
             </Nav>
         </section>
@@ -54,12 +59,14 @@
             </div>
             <!-- Card Body Section -->
             <div class="card-body basis-full md:basis-1/2 p-4">
-                <div class="flex justify-start gap-2">
+                <div class="flex justify-start items-center gap-2">
                     <img src="./assets/coin.png" alt="">
                     <div id="sate-value-flood-noa" class="stat-value">4200 </div>
+                    <div class="font-bold text-black text-3xl">BDT</div>
                 </div>
-                <h2 class="card-title text-xl font-bold">Donate for Flood at Noakhali, Bangladesh</h2>
-                <p>
+                <h2 id="hist-text-donate-noa" class="card-title text-xl font-bold my-4">Donate for Flood at Noakhali,
+                    Bangladesh</h2>
+                <p class="my-5">
                     The recent floods in Noakhali have caused significant damage to homes and infrastructure. Your
                     donation
                     will help provide essential supplies to those affected by this disaster. Every contribution, big or
@@ -69,7 +76,7 @@
                     of those in need.
                 </p>
                 <input id="input-donate-value-noa" type="text" placeholder="Write Donation Here"
-                    class="input input-bordered w-full max-w-xs" />
+                    class="input input-bordered w-full lg:w-full " />
                 <div class="card-actions mt-4">
                     <button id="btn-donate-now" class="btn w-full text-black font-bold"
                         style="background-color: #B4F461;">
@@ -81,8 +88,7 @@
     </section>
     <!-- HISTORY SECTION -->
     <section id="history-section" class="hidden container mx-auto">
-        <div>
-            <h1>History Section</h1>
+        <div id="hist-section">
         </div>
     </section>
     <script src="/JS/common.js"></script>
